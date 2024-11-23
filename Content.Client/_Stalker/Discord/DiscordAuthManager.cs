@@ -10,7 +10,7 @@ public sealed class DiscordAuthManager
     [Dependency] private readonly IStateManager _state = default!;
 
     public string AuthLink = default!;
-    public const string DiscordServerLink = "https://discord.gg/pBFv9pDuqK";
+    public const string DiscordServerLink = "https://discord.gg/SDq3SsZnsa";
 
     public void Initialize()
     {
