@@ -66,3 +66,14 @@
     sprite: _Stalker/Objects/Clothing/hats/Vityaz1L.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/hats/Vityaz1L.rsi
+
+- type: entity
+  parent: STClothingHeadHelmetTacticalT2Base
+  id: ClothingHeadHelmetVityaz1P
+  name: шлем "Капелан"
+  description: Противоударный шлем "Витязь-С", переделаный под нужды церкви.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/Vityaz1P.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/Vityaz1P.rsi
