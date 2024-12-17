@@ -13,6 +13,15 @@
       sprite: _Stalker/Objects/Weapons/Guns/Rifles/vepr.rsi
     - type: Sprite
       sprite: _Stalker/Objects/Weapons/Guns/Rifles/vepr.rsi
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: muzzle
+        map: ["enum.GunVisualLayers.Muzzle"]
+      - state: sight
+        map: ["enum.GunVisualLayers.Scope"]
     - type: Gun
       soundGunshot:
         path: /Audio/_Stalker/Effects/Guns/svd.ogg
@@ -25,6 +34,9 @@
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
+    - type: ChamberMagazineAmmoProvider
+      soundRack:
+        path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -36,18 +48,18 @@
           whitelist:
             tags:
               - Magazine754
-        gun_module_muzzle:
-          name: Muzzle
+        gun_module_scope:
+          name: Scope
           priority: 3
           whitelist:
             tags:
-              - STWeaponModuleSniperSilencer
-        gun_module_scope:
-          name: Scope
+              - STWeaponModuleSniperSight
+        gun_module_muzzle:
+          name: Muzzle
           priority: 2
           whitelist:
             tags:
-              - STWeaponModuleSniperSight
+              - STWeaponModuleSniperSilencer
         gun_chamber:
           name: Chamber
           startingItem:
@@ -55,6 +67,19 @@
           whitelist:
             tags:
               - Cartridge754
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_module_muzzle: !type:ContainerSlot
+        gun_module_scope: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: Scope
+      zoom: 1.2
+      offset: 8
 
 - type: entity
   name: Тактический ВПО-129 Серафимов
