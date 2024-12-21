@@ -1,0 +1,94 @@
+- type: entity
+  name: Нива
+  parent: BaseStructureDynamic
+  id: STBaseCar
+  components:
+  - type: MechAir
+  - type: AirIntake
+  # for intake and filter to work
+  - type: AtmosDevice
+    requireAnchored: false
+    joinSystem: true
+  - type: DoAfter
+  - type: UserInterface
+    interfaces:
+      enum.MechUiKey.Key:
+        type: MechBoundUserInterface
+  - type: Puller
+    needsHands: false
+  - type: InputMover
+  - type: InteractionOutline
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - FootstepSound
+  - type: Physics
+    bodyType: Dynamic
+  - type: Clickable
+  - type: WiresPanel
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1,-1,1,1"
+        density: 1000
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      mech-pilot-slot: !type:ContainerSlot
+      mech-equipment-container: !type:Container
+      mech-battery-slot: !type:ContainerSlot
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: FootstepModifier
+    footstepSoundCollection:
+      path: /Audio/_Stalker/car-driving-ambience-6365.ogg
+  - type: GuideHelp
+    guides:
+    - Robotics
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: start
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Stalker/Objects/Decoration/Transport/old_NIVA.rsi
+    layers:
+    - map: [ "enum.MechVisualLayers.Base" ]
+      state: niva-old
+  - type: MovementSpeedModifier
+    weightlessModifier: 1
+    acceleration: 2
+    friction: 1
+    frictionNoInput: 6
+    baseWalkSpeed: 6
+    baseSprintSpeed: 9
+  - type: ContainerFill
+    containers:
+      mech-battery-slot:
+      - PowerCellHigh
+  - type: Skates
+  - type: Mech
+    mechToPilotDamageMultiplier: 0.05
+    baseState: niva-old
+  - type: ItemSlots
+  - type: Transform
+  - type: EntityStorage
+    capacity: 3
+    airtight: false
+  - type: Lock
