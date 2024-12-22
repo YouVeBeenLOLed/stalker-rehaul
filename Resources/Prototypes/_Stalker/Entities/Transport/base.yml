@@ -3,12 +3,6 @@
   parent: BaseStructureDynamic
   id: STBaseCar
   components:
-  - type: MechAir
-  - type: AirIntake
-  # for intake and filter to work
-  - type: AtmosDevice
-    requireAnchored: false
-    joinSystem: true
   - type: DoAfter
   - type: UserInterface
     interfaces:
@@ -23,7 +17,6 @@
     - DoorBumpOpener
     - FootstepSound
   - type: Physics
-    bodyType: Dynamic
   - type: Clickable
   - type: WiresPanel
   - type: Fixtures
@@ -31,12 +24,12 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-1,-1,1,1"
-        density: 1000
+          bounds: "-0.7,-1.2,0.6,1"
+        density: 50
         mask:
         - MobMask
         layer:
-        - MobLayer
+        - MachineLayer
   - type: Appearance
   - type: ContainerContainer
     containers:
@@ -46,9 +39,6 @@
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
-  - type: FootstepModifier
-    footstepSoundCollection:
-      path: /Audio/_Stalker/car-driving-ambience-6365.ogg
   - type: GuideHelp
     guides:
     - Robotics
@@ -82,9 +72,9 @@
     containers:
       mech-battery-slot:
       - PowerCellHigh
-  - type: Skates
   - type: Mech
     mechToPilotDamageMultiplier: 0.05
+    airtight: true
     baseState: niva-old
   - type: ItemSlots
   - type: Transform
@@ -92,3 +82,5 @@
     capacity: 3
     airtight: false
   - type: Lock
+  - type: AccessReader
+    access: [["Anomalist"]]
