@@ -1,0 +1,17 @@
+- type: damageModifierSet
+  id: Niva
+  class: 3
+  coefficients:
+    Blunt: 0.3
+    Slash: 0.3
+    Piercing: 0.3
+    Heat: 0.3
+    Cold: 0.3
+    Caustic: 20
+    Compression: 20
+    Radiation: 0
+    Psy: 0
+  flatReductions:
+    Blunt: 9
+    Slash: 9
+    Piercing: 6

@@ -24,8 +24,8 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.7,-1.2,0.6,1"
-        density: 50
+          bounds: "-0.5,-0.7,0.5,0.8"
+        density: 155
         mask:
         - MobMask
         layer:
@@ -37,8 +37,8 @@
       mech-equipment-container: !type:Container
       mech-battery-slot: !type:ContainerSlot
   - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Metallic
+    damageContainer: Car
+    damageModifierSet: Niva
   - type: GuideHelp
     guides:
     - Robotics
@@ -46,7 +46,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 600
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -58,6 +58,7 @@
   - type: Sprite
     drawdepth: Mobs
     sprite: _Stalker/Objects/Decoration/Transport/old_NIVA.rsi
+    scale: 0.8, 0.8
     layers:
     - map: [ "enum.MechVisualLayers.Base" ]
       state: niva-old
@@ -67,7 +68,7 @@
     friction: 1
     frictionNoInput: 6
     baseWalkSpeed: 6
-    baseSprintSpeed: 9
+    baseSprintSpeed: 11
   - type: ContainerFill
     containers:
       mech-battery-slot:
@@ -84,3 +85,17 @@
   - type: Lock
   - type: AccessReader
     access: [["Anomalist"]]
+  - type: ApproachEmitter
+    range: 20
+    minRange: 15
+    useMinRange: true
+  - type: Stagger
+
+- type: damageContainer
+  id: Car
+  supportedGroups:
+    - Brute
+    - Burn
+  supportedTypes:
+    - Caustic
+    - Compression
