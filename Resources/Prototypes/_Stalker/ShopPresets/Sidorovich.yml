@@ -34,7 +34,7 @@
     FoodMeatDogCooked: 50
     STFoodMeatSpiderCooked: 25
     FoodMeatBoarCooked: 80
-    
+
     # Acidic group - 1
     ZoneArtifactBlood: 1200
     ZoneArtifactMeat: 2400
@@ -192,7 +192,6 @@
       priority: 8
       items:
         STCombatKnife: 25
-        TrashBag: 30
         BoxZiptie: 50
         BoxSafebox: 300
         CheapLighter: 5
@@ -213,6 +212,7 @@
         TrashDetectorTier1: 200
         Matchbox: 10
         HatchetStalker: 150
+        HotelCard: 25
     - name: shop-category-provisions
       priority: 9
       items:
@@ -322,7 +322,7 @@
         AccordionInstrument: 500
     - name: shop-category-blueprints
       priority: 13
-      items: 
+      items:
         STDetectorAD1Blueprint: 2000
         STZoneArtifactDetectorPulseBlueprint: 2000
         TrashDetectorTier2Blueprint: 4000
@@ -345,6 +345,10 @@
           STWeaponRifleAKS74UWhite: 650
           STHatchetSponsor: 150
           STSpanishKnife: 100
+    3:
+      - name: О-сознание
+        items:
+          STWeaponRifleSVDSWood: 800
   contributorCategories:
     - name: contributor
       items:
