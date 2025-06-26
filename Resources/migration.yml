@@ -117,9 +117,59 @@ BlinddogTrigger1 : null
 BlinddogTrigger10 : null
 BlinddogTrigger100 : null
 BoarTrigger : null
-BoarTrigger1 : null
-BoarTrigger10 : null
-BoarTrigger100 : null
+BoarTrigger1 : STTriggerBoar141010
+BoarTrigger10 : STTriggerBoar142510
+BoarTrigger100 : STTriggerBoar145030
+STTriggerBlindDog1210: STTriggerBlindDog121010
+STTriggerBlindDog1420: STTriggerBlindDog142010
+STTriggerBlindDog12100: STTriggerBlindDog125010
+STTriggerBlindDog14100: STTriggerBlindDog145010
+STTriggerBoar1210: STTriggerBoar121010
+STTriggerBoar1420: STTriggerBoar142510
+STTriggerBoar12100: STTriggerBoar125010
+STTriggerBoar14100: STTriggerBoar145010
+STTriggerBush1210: STTriggerBush121010
+STTriggerBush12100: STTriggerBush125010
+STTriggerFlesh1210: STTriggerFlesh121010
+STTriggerFlesh12100: STTriggerFlesh125010
+STTriggerFlesh14100: STTriggerFlesh145010
+STTriggerFlesh1420: STTriggerFlesh142010
+STTriggerFleshNeutral12100: STTriggerFleshNeutral125010
+STTriggerFleshNeutral1420: STTriggerFleshNeutral142010
+STTriggerFleshNeutral14100: STTriggerFleshNeutral145010
+STTriggerSpider1420: STTriggerSpider142010
+STTriggerPseudodog1210: STTriggerPseudodog121010
+STTriggerPseudodog12100: STTriggerPseudodog125010
+STTriggerPseudodog1420: STTriggerPseudodog142510
+STTriggerRodent1210: STTriggerRodent121010
+STTriggerRodent12100: STTriggerRodent125010
+STTriggerRodent14100: STTriggerRodent145010
+STTriggerRodent1420: STTriggerRodent142010
+STTriggerSeasonedBoar1420: STTriggerSeasonedBoar141010
+STTriggerSeasonedBoar14100: STTriggerSeasonedBoar142510
+STTriggerSeasonedBoar1210: STTriggerSeasonedBoar121010
+STTriggerSeasonedBoar12100: STTriggerSeasonedBoar122510
+STTriggerLeshiy1210: STTriggerLeshiy121010
+STTriggerLeshiy1420: STTriggerLeshiy142010
+STTriggerOldBoar1420: STTriggerOldBoar141010
+STTriggerOldBoar14100: STTriggerOldBoar142530
+STTriggerOldBoar1210: STTriggerOldBoar121010
+STTriggerOldBoar12100: STTriggerOldBoar122510
+STTriggerBloodSucker1210: STTriggerBloodSucker142010
+STTriggerBloodSucker12100: STTriggerBloodSucker125030
+STTriggerBloodSucker14100: STTriggerBloodSucker145030
+STTriggerByurer1210: STTriggerByurer121010
+STTriggerByurer12100: STTriggerByurer125030
+STTriggerByurer1420: STTriggerByurer142010
+STTriggerZombie1210: STTriggerZombie121010
+STTriggerZombie14100: STTriggerZombie145030
+STTriggerRat1210: STTriggerRat121010
+STTriggerRat12100: STTriggerRat125010
+STTriggerRat14100: STTriggerRat145010
+STTriggerRat1420: STTriggerRat142010
+STTriggerSnork1210: STTriggerSnork121010
+STTriggerSnork12100: STTriggerSnork125030
+STTriggerSnork1420: STTriggerSnork142010
 BushTrigger : null
 BushTrigger1 : null
 BushTrigger10 : null
@@ -133,9 +183,9 @@ BloodsuckerTrigger1 : null
 BloodsuckerTrigger10 : null
 BloodsuckerTrigger100 : null
 PseudodogTrigger : null
-PseudodogTrigger1 : null
-PseudodogTrigger10 : null
-PseudodogTrigger100 : null
+PseudodogTrigger1 : STTriggerPseudodog141010
+PseudodogTrigger10 : STTriggerPseudodog141030
+PseudodogTrigger100 : STTriggerPseudodog145010
 PsidogTrigger : null
 PsidogTrigger1 : null
 PsidogTrigger10 : null
@@ -171,10 +221,10 @@ RatTrigger1 : null
 RatTrigger10a10 : null
 RatTrigger1a10 : null
 RatTrigger1a15 : null
-PseudogiantTrigger10a1 : null
-PseudogiantTrigger25a1 : null
-PseudogiantTrigger100a1 : null
-PseudogiantTrigger20a2 : null
+PseudogiantTrigger10a1 : STTriggerPseudogiant11030
+PseudogiantTrigger25a1 : STTriggerPseudogiant12510
+PseudogiantTrigger100a1 : STTriggerPseudogiant110030
+PseudogiantTrigger20a2 : STTriggerPseudogiant117530
 LeshiyTrigger10 : null
 LeshiyTrigger25 : null
 LeshiyTrigger50 : null
@@ -189,6 +239,10 @@ ByurerTrigger50 : null
 ByurerTrigger100 : null
 ZombieTriggerUR30 : null
 ZombieTriggerUR10: null
+STTriggerOracle1420: STTriggerOracle122530
+STTriggerOracle14100: STTriggerOracle127510
+STTriggerOracle1210: STTriggerOracle121010
+STTriggerOracle12100: STTriggerOracle125010
 
 #24.11.2024 - Stalker14
 CrateTrashCart : null
@@ -763,3 +817,13 @@ TorsoBorgJanitor: TorsoBorg
 PresentRandomAsh: PresentRandomCoal
 # 2024-11-19
 CrateCrewMonitoringBoards: CrateCrewMonitoring
+
+# 2025-06-12
+STCraftGlassT1: null
+STCraftSapphireCrystalT4: STCraftQuartzCrystalT3
+STCraftSheetCopperT1: null
+STCraftPlasticFittingT1: null
+STCraftPlasticFittingT3: STCraftPlasticFittingT2
+STCraftPlasticFittingT5: STCraftPlasticFittingT4
+STCraftOakPlankT3: STCraftBirchPlankT2
+STCraftYewPlankT4: null
