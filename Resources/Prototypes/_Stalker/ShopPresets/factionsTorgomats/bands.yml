@@ -1,20 +1,6 @@
 - type: shopPreset
   id: BandsShopPreset
   itemsForSale:
-    # values
-    IngotGold1: 750
-    IngotSilver1: 500
-    MaterialDiamond1: 1000
-    DrinkGoldenCup: 400
-    # craftcmp
-    STCraftSheetCopperT1: 60
-    STCraftSheetBrassT3:  1000
-    STCraftStandardPCBT2: 300
-    STCraftSheetIronT2: 200
-    STCraftMultilayerPCBT3: 500
-    STCraftQuartzCrystalT3: 650
-    STCraftGlassT2: 100
-
     # Thermal group - 1
     ZoneArtifactFireball: 400
     ZoneArtifactEye: 600
@@ -111,9 +97,9 @@
     STWeaponSniperSKS: 850
 
     #7.62x51
-    STWeaponRifleFAL: 750
+    STWeaponRifleFAL: 1750
     STWeaponRifleGalatz: 2000
-    STWeaponRifleSCARH: 1625
+    STWeaponRifleSCARH: 2625
     STWeaponRifleM14: 2125
 
     #7.62x54
@@ -147,6 +133,31 @@
     STWeaponRevolverSWModel325: 550
     STWeaponRevolverSWModel625: 725
 
+    #values
+    ClothingNeckBronzeheart: 400
+    ClothingNeckCargomedal: 300
+    ClothingNeckEngineermedal: 200
+    Wristwatch: 600
+    SilverRing: 500
+    GoldRing: 800
+    TreasureCoinIron: 100
+    TreasureCoinGold: 300
+    TreasureCoinSilver: 200
+    ClothingStalkerNeckToken: 50
+    SilverRingDiamond: 850
+    GoldRingDiamond: 1000
+    ClothingNeckGoldAutismPin: 50
+    MaterialDiamond1: 2500
+    DrinkGoldenCup: 1000
+    SilverRingGem: 2000
+    GoldRingGem: 3000
+    ClothingNeckGoldmedal: 1000
+    IngotSilver1: 700
+    IngotGold1: 1000
+    WristwatchGold: 5500
+    ClothingNeckBling: 1000
+    TreasureCoinAdamantine: 500
+
   categories:
     - name: shop-category-weapons
       priority: 1
@@ -156,44 +167,39 @@
             # Guns
           # 7mm
         STWeaponShotgunMP155T: 45 #T0.5
-        STWeaponShotgunTOZ34: 225 # T2
+        STWeaponShotgunTOZ34: 100 # T2
         STWeaponShotgunMP133: 385 # T1.5
         STWeaponShotgunMossbergM88: 630 # T2
         STWeaponShotgunMP153: 900 # T3
           # 5,45x39
-        STWeaponRifleSaiga545: 1700
+        STWeaponRifleSaiga545: 1400
         STWeaponRifleAKS74U: 2000
-        STWeaponRifleAKS74: 4000
         # Smg
-        STWeaponSMGMP5: 1200
-        STWeaponSMGVZ61: 500
-        STWeaponSMGPPSh41: 1000
+        STWeaponSMGMP5: 1650
+        STWeaponSMGVZ61: 750
+        STWeaponSMGPPSh41: 1250
         # Other
         WeaponPistolStalkerTT: 250
         WeaponStalkerPistolTec9: 250
         WeaponPistolStalkerAPS: 500
         STWeaponSniperMosin: 800
-        STWeaponSniperSKS: 1700
+        STWeaponSniperSKS: 1200
         STWeaponRevolverSWPC325TR: 700
-        STWeaponRifleSCARH: 4000
     - name: shop-category-magazines
       priority: 2
       items:
           # 5,45x39
         Base545Mag10: 50 #T1
-        545Mag20: 300 #T2
-        545Mag30: 700 #T3
+        545Mag20: 100 #T2
           # 7,62x54 and 39
         Base739Mag10: 100
         Base754Mag5: 250 #T1
-        739Mag45: 450
           # Smg
         BaseMP5Mag: 200
         Vz61Mag: 100
-        PPSHDrum: 800
-        BasePPSHMag: 200
+        PPSHDrum: 1000
+        BasePPSHMag: 250
           # Other
-        751Mag20: 350
         BaseTEC9Mag: 120
         TTMag: 100
         STSpeedLoader45ACPEmpty: 200
@@ -201,36 +207,33 @@
     - name: shop-category-ammunition
       priority: 3
       items:
-        6mmBuckshotBox: 100
+        6mmBuckshotBox: 120
         7mmBuckshotBox: 35
-        8mmBuckshotBox: 215
+        8mmBuckshotBox: 200
          # 7.25
         725PBox: 90
-        725PTBox: 180
-        725PSTBox: 200
+        725PTBox: 200
+        725PSTBox: 1500
         # 9.19
         919PSOGJBox: 65
-        919PSTBox: 170
-        919PBMBox: 225
+        919PSTBox: 270
         # 5.45
-        545FMJBox: 480
+        545FMJBox: 1480
         545HPBox: 1000
-        545PCBox: 850
         # 7.39
-        739FMJBox: 675
+        739FMJBox: 1575
         # 7.51
-        751M80Box: 1000
+        751M80Box: 1900
         # 7.54
-        754FMJBox: 640
+        754FMJBox: 1240
         754HPBox: 960
          # .45
         45ACPLFMJBox: 100
-        45ACPMFMJBox: 250
-        45ACPAPBox: 625
+        45ACPMFMJBox: 450
          # 9.18
         918PGJBox: 65
-        918PSTBox: 170
-        918PBMBox: 200
+        918PSTBox: 470
+        918PBMBox: 850
 
     - name: shop-category-armor
       priority: 4
@@ -239,26 +242,31 @@
         ClothingHeadHelmetLight: 200 # T1 - PVE
         ClothingHeadHelmetInfantryBand: 600 # T2 - PVP
         ClothingHeadHelmetVityaz1B: 2200 # T2 - PVE
-        ClothingHeadAssaultHelmetBandit: 1400 # T3 - PVP
+        ClothingHeadAssaultHelmetBandit: 9500 # T3 - PVP
           # OuterClothing #
         ClothingOuterCoatBanditBrown: 325 # T1 - uni
         ClothingOuterCoatBanditBlack: 325 # T1 - uni
         STClothingOuterArmorLightPlateVestBaseBand: 1000 # T2 - PvP
         SetArmoutJacketBanditBuyableCrate: 1025 # T2 - PvP
+        SetMercBanditBuyableCrate: 10000
         ClothingOuterArmourCoatBanditBrown: 1050 # T2 - PvP
         ClothingOuterArmourCoatBanditBlack: 1050 # T2 - PvP
         ClothingOuterArmor6B2: 1400 # T2 - PvP
         STClothingOuterArmorBandits: 1800 # T2 - PVE
-        STClothingOuterArmorLightPlateVestBaseANAgray: 2250 # T3 - PVP
-        ClothingOuterArmorBandits: 2900 # T3 - PVE
+        STClothingOuterArmorLightPlateVestBaseANAgrayOld: 1200 # T3 - PVP
     - name: shop-category-storage-and-containers
       priority: 5
       items:
           # BackPacks
-        ClothingBackpackDuffelBlackStalker: 30 # T1
-        ClothingBackpackTacticBlackStalker: 450 # T2
-        ClothingBackpackMercStalker: 850 # T3
-        ClothingBackpackDuffelCommonStalker: 900 #T3
+        ClothingBackpackTownBlackStalker: 50 # T1
+        ClothingBackpackTownWhiteStalker: 50 # T1
+        ##-------------------------------------------
+        ClothingBackpackTacticBlackStalker: 300 # T2
+        ##-------------------------------------------
+        ClothingBackpackMercStalker: 799 # T3 |pve backpack
+        ClothingBackpackStalkerZaryaBlack: 999 # T3 |pvp backpack
+        ClothingBackpackDuffelCommonStalker: 1100  # T3 |pvp backpack
+        ##-------------------------------------------
           # Belts
         ClothingBeltBandolierStalker: 20 # T1 - PVE
         ClothingBeltTarzanBlack: 200 # T1 - PVP
@@ -282,13 +290,18 @@
         STBoltBagFilled: 50
         BoxArtcont: 500 # T1
         ZoneAnomalyDetectorAD1: 450 # T1
+        TrashDetectorTier1: 200
+        TrashDetectorTier2: 400
+        TrashDetectorTier3: 800
+        TrashDetectorTier4: 1600
+
+
     - name: shop-category-utilities
       priority: 8
       items:
         CraftSaw: 1000
         STSkinsKitBandits: 500
         STCombatKnife: 25
-        TrashBag: 30
         BoxZiptie: 50
         BoxSafebox: 300
         CheapLighter: 5
@@ -306,7 +319,6 @@
         Syringe: 20
         ClothingGoPro: 250
         ExtendedEmergencyOxygenTankFilledStalker: 50
-        TrashDetectorTier1: 200
         Matchbox: 10
         HatchetStalker: 150
     - name: shop-category-provisions
@@ -323,22 +335,24 @@
         FoodTinMRE: 120
         DrinkLemonadehBottleFull: 50
         STFoodMeatSalami: 350
+        CigPackSuka: 100
     - name: shop-category-medicine # 50% скидка от сталкеров
       priority: 10
       items:
-          # Cheap
-        PillDexalin: 10
-        PillDexalinPlusStalker: 25
-        STOintment: 10
+        STPillboxAntirad: 150
         STGauze: 15
-        STBrutepack: 10
-          # Expensive
-        antiradpill: 60
-        radioprotectpill: 90
-        Bloodpack: 110
-        psyblock: 150
-        MedkitAI2: 150
-        Defibrillator: 500
+        STOintment: 95
+        STBrutepack: 30
+        Bloodpack: 800
+        MedkitAI2: 175
+        Defibrillator: 1000
+        AntiRadMedipen: 300
+        STPillboxProbud: 400
+        MedkitMilitary: 470
+        MedkitScience: 650
+        MedkitElite: 600
+        MedkitLAR: 750
+        STPillboxShiza: 15000
     - name: shop-category-modules
       priority: 11
       items:
@@ -351,12 +365,6 @@
         STModuleSilencerSMGT1: 600
         STModuleSniperSightT1: 600
         STModuleSilencerSniperT1: 400
-    - name: shop-category-metalsearchers
-      priority: 12
-      items:
-        TrashDetectorTier2: 500
-        TrashDetectorTier3: 2000
-        TrashDetectorTier4: 3999
     - name: shop-category-customization
       priority: 13
       items:

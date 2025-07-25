@@ -6,18 +6,12 @@
   playTimeTracker: JobMonolith
   whitelisted: true
   requirements:
-    # - !type:DepartmentTimeRequirement
-    #   department: StalkerAdvanced
+    # - !type:RoleTimeRequirement
+    #   role: JobMonolith
     #   time: 1
-    #   inverted: true
     - !type:SpeciesRequirement
       species:
       - Human
-      - Dwarf
-    # - !type:DepartmentTimeRequirement
-    #   department: StalkerAnomalists
-    #   time: 1
-    #   inverted: true
   startingGear: MonolithGear
   supervisors: job-monolith-supervisor
   canBeAntag: false
@@ -32,27 +26,37 @@
         bandIcon: monolith
         bandProto: STMonolithBand
         bandRankId: 2
+      - type: NpcFactionMember
+        factions:
+          - Mutated
+      - type: Hunger
+        baseDecayRate: 0
+      - type: Thirst
+        baseDecayRate: 0
+      - type: PersonalDamageBlock
+      - type: Damageable
+        damageModifierSet: STPlayerMonolithModifierSet
       - type: BlockTackingHolyItems
       - type: TeethPull
         teethProto: ToothStalker
         pullingItemTag: PliersStalker
         teethCount: 3
         initialTeeth: 3
+      - type: STAnomalyTipsViewing
 
 - type: startingGear
   id: MonolithGear
   equipment:
     id: MonolithPDA
-    belt: ClothingBeltStorageWaistbag
-    torso: ClothingTorsoTurtlenecksMonolithCamouflage
-    legs: ClothingLegsJeansMonolithCamouflage
-    shoes: ClothingShoesBootsCombat
-    gloves: ClothingHandsGlovesFingerless
+    torso: ClothingTorsoSweaterStalkerGreen
+    legs: ClothingLegsJeansBlue
+    shoes: ClothingShoesNovice
+    back: ClothingBackpackDuffelBlackStalker
 - type: stBand
   id: STMonolithBand
   name: Monolith
   factionId: Monolith
-  maxMembers: 10
+  maxMembers: 15
   managingRankId: 3
   hierarchy:
     1: StalkerMonolith

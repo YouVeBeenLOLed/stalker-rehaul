@@ -31,7 +31,7 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 250
+            damage: 200
           behaviors:
             - !type:PlaySoundBehavior
               sound:
@@ -39,7 +39,7 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        250: Dead
+        200: Dead
     - type: MeleeWeapon
       attackRate: 1
       heavyWindupModifier: 1
@@ -58,7 +58,7 @@
       wideAnimation: WeaponArcClaw
       damage:
         types:
-          Slash: 32
+          Slash: 26
     - type: MovementSpeedModifier
       baseWalkSpeed: 2.5
       baseSprintSpeed: 5

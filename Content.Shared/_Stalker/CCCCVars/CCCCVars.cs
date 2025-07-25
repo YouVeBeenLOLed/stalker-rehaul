@@ -73,7 +73,7 @@ public sealed partial class CCCCVars
 
     /*
     * Stalker OpenRouter KEY
-    */ 
+    */
     public static readonly CVarDef<string> OpenRouterApiKey =
         CVarDef.Create("openrouter.apikey", string.Empty, CVar.SERVERONLY | CVar.CONFIDENTIAL);
 

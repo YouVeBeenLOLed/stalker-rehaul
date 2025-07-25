@@ -1,7 +1,7 @@
 - type: species
   id: Diona
   name: species-name-diona
-  roundStart: true # Stalker-Changes
+  roundStart: false # Stalker-Changes
   prototype: MobDiona
   sprites: MobDionaSprites
   defaultSkinTone: "#cdb369"
@@ -12,6 +12,8 @@
   femaleFirstNames: DionaFirst
   lastNames: DionaLast
   naming: TheFirstofLast
+  lobbyAllowed: true
+  isSponsor: true
 
 - type: speciesBaseSprites
   id: MobDionaSprites

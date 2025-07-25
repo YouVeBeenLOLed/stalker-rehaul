@@ -3,6 +3,8 @@
   abstract: true
   id: STBaseHealingItem
   components:
+  - type: Healing
+    selfHealPenaltyMultiplier: 2.5
   - type: Item
     size: Tiny
   - type: STWeight
@@ -41,11 +43,9 @@
     damageContainers:
       - Biological
     damage:
-      types:
-        Piercing: -7
-        Blunt: -4
-        Slash: -7
-    delay: 8
+      groups:
+        Brute: -24
+    delay: 4
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
     healingEndSound:
@@ -81,10 +81,14 @@
       scale: 0.6, 0.6
     - type: Healing
       damageContainers:
-        - Biological
+      - Biological
       damage:
-      bloodlossModifier: -20
-      delay: 0.5
+        groups:
+          Brute: 1 # Tourniquets HURT!
+        types:
+          Asphyxiation: 2 # Essentially Stopping all blood reaching a part of your body
+      bloodlossModifier: -20 # Tourniquets stop bleeding
+      delay: 2
       healingBeginSound:
         path: "/Audio/Items/Medical/brutepack_begin.ogg"
       healingEndSound:
@@ -128,10 +132,11 @@
       - Biological
     damage:
       types:
+        Cold: -3
         Heat: -8
         Caustic: -4
         Shock: -4
-    delay: 8
+    delay: 4
   - type: Stack
     stackType: STOintment
     count: 10
@@ -156,7 +161,7 @@
   id: STOintmentGood
   suffix: ST, T3
   name: мазь с антибиотиком
-  description: Дорогая мазь от известного производителя, в составе есть антибиотик, обезболивает, обеззараживает и эффективно помогает заживлять ожоги любых видов.
+  description: Дорогая мазь от известного производителя, в составе есть антибиотик, обезболивает, обеззараживает и эффективно помогает заживлять ожоги любых видов - в том числе обморожение.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Medicine/GoodOinment.rsi
@@ -167,10 +172,11 @@
       - Biological
     damage:
       types:
-        Heat: -20
-        Caustic: -10
-        Shock: -10
-    delay: 8
+        Cold: -25
+        Heat: -25
+        Caustic: -15
+        Shock: -15
+    delay: 4
   - type: Stack
     stackType: STOintmentGoodstack
     count: 4
@@ -280,7 +286,7 @@
   id: MedkitAI2
   name: аптечка АИ-2
   suffix: ST, T2
-  description: Обычная универсальная аптечка военного назначения. Поможет с пулевыми, резаными и прочими физическими ранениями, имеет пару ампул с антирадиационным препаратом.
+  description: Обычная универсальная аптечка военного назначения. Поможет с пулевыми, резаными и прочими физическими ранениями, имеет пару ампул с антирадиационным препаратом, также поможет от внутренних кровотечений.
   components:
   - type: RepositoryItem
     categoryName: Медицина
@@ -298,10 +304,11 @@
     damage:
       types:
         Piercing: -10
-        Blunt: -5
+        Blunt: -10
         Slash: -10
         Radiation: -10
-    delay: 6
+        Compression: -10
+    delay: 5
   - type: Stack
     stackType: MedkitAI2
     count: 4
@@ -346,7 +353,7 @@
   id: MedkitMilitary
   suffix: ST, T3
   name: армейская аптечка
-  description: Медицинский набор, разработанный специально для армейских подразделений. Более эффективный вариант по сравнению с аптечкой АИ-2, но не содержит антирадина.
+  description: Медицинский набор, разработанный специально для армейских подразделений. Более эффективный вариант по сравнению с аптечкой АИ-2, но не содержит антирадина. Не остановит кровотечение, удобно в применении.
   components:
   - type: STWeight
     self: 0.4
@@ -368,7 +375,7 @@
         Piercing: -20
         Blunt: -10
         Slash: -20
-    delay: 8
+    delay: 3
   - type: Stack
     stackType: MedkitMilitary
     count: 4
@@ -387,7 +394,7 @@
   id: MedkitScience
   suffix: ST, T3
   name: научная аптечка
-  description: Медицинский набор, разработанный специально для работы в условиях Зоны. Состав набора подобран как для борьбы с ранениями, так и для вывода радионуклидов из организма. Препятствует развитию лучевой болезни, а также снижает дозу накопленной радиации.
+  description: Медицинский набор, разработанный специально для работы в условиях Зоны. Содержит комплекс медикаментов для лечения большинства типов аномального поражения, также имеет немного физрасствора. Не поможет против пси-воздействия и токсинов, включая радиацию.
   components:
   - type: STWeight
     self: 0.6
@@ -405,12 +412,12 @@
       - state: inhand-right
   - type: Healing
     damage:
+      groups:
+        Burn: -75
+        Airloss: -75
       types:
-        Heat: -15
-        Caustic: -15
-        Shock: -15
-        Radiation: -20
-    delay: 9
+        Compression: -30
+    delay: 6
   - type: Stack
     stackType: MedkitScience
     count: 4
@@ -426,7 +433,7 @@
 
 - type: entity
   name: продвинутая аптечка
-  description: Продвинутый медицинский набор, разработанный исключительно для выведения токсинов из организма.
+  description: Продвинутый медицинский набор, разработанный исключительно для выведения токсинов и восстановления ЦНС.
   parent: BaseHealingItem
   id: MedkitElite
   suffix: ST, T4
@@ -449,12 +456,12 @@
       right:
       - state: inhand-right
   - type: Healing
-    damageContainers:
-      - Biological
     damage:
+      groups:
+        Toxin: -80
+        Genetic: -80
       types:
-        Poison: -30
-        Radiation: -40
+        Psy: -30
     delay: 9
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
@@ -475,7 +482,7 @@
 
 - type: entity
   name: аптечка «LAR»
-  description: Совершенный медицинский набор «LAR», разработанный специально для работы в тяжёлых условиях Зоны. Выводит большинство известных заражений, но не радиационное. Учёные посчитали, что если он будет выводить ещё и радиацию, это будет вредно для баланса вселенной.
+  description: Совершенный медицинский набор «LAR», разработанный специально для работы в тяжёлых условиях Зоны. Предоставляет полный комплекс помощи при всех типах аномального поражения, а также поражения ЦНС и внутренних органов. Не выводит радиацию.
   parent: BaseHealingItem
   id: MedkitLAR
   suffix: ST, T4
@@ -501,13 +508,15 @@
     damageContainers:
       - Biological
     damage:
+      groups:
+        Burn: -95
+        Genetic: -70
       types:
-        Poison: -15
-        Compression: -15
-        Heat: -25
-        Caustic: -25
-        Shock: -25
-    delay: 9
+        Poison: -75
+        Caustic: -65
+        Compression: -45
+        Psy: -65
+    delay: 5
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
     healingEndSound:
@@ -540,7 +549,7 @@
     areaInsertRadius: 1
     storageInsertSound: /Audio/Effects/pill_insert.ogg
     storageRemoveSound: /Audio/Effects/pill_remove.ogg
-    whitelist: 
+    whitelist:
       tags:
       - Pill
   - type: Dumpable

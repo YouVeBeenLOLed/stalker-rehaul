@@ -1175,7 +1175,6 @@
 - type: entity
   parent: NPCDoll
   id: NPCGabrielSerafim
-  noSpawn: false
   name: Габриэль [→   ←]
   suffix: ST, Serafim
   description: Старый серафим вот уже 10 лет служил Сыну Звёзды, к сожалению он стал слишком стар для войны и охоты, сейчас он помогает в поставках снаряжения для южного ковена.
@@ -1195,8 +1194,8 @@
       enum.ShopUiKey.Key:
         type: ShopBoundUserInterface
   - type: Shop
-    moneyId: Fangs
-    shopPresetId: SerafimShopPresetLight
+    moneyId: Roubles
+    shopPresetId: SeraphimeShopPresetLight
   - type: TypingIndicator
     proto: robot
   - type: TTS # Corvax-TTS
@@ -1335,3 +1334,40 @@
     - Binary
     - Common
 
+- type: entity
+  parent: NPCDoll
+  id: NPCHidenTrader
+  name: Неизвестный [→   ←]
+  description:
+  components:
+  - type: Sprite
+    sprite: _Stalker/NPC/Merc.rsi
+    state: merc
+  - type: Physics
+    bodyType: Static
+  - type: ActivatableUI
+    key: enum.ShopUiKey.Key
+    singleUser: true
+  - type: UserInterface
+    interfaces:
+      enum.ShopUiKey.Key:
+        type: ShopBoundUserInterface
+  - type: Shop
+    moneyId: Dollar
+    shopPresetId: HidenZoneTrader
+  - type: TimedDespawn
+    lifetime: 1800
+
+- type: entity
+  name: триггер Скрытого Торговца
+  id: STTriggerHidenTrader
+  parent: STBaseTrigger125
+  suffix: ST, Dollar, Trigger
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - NPCHidenTrader
+    restricted:
+    - NPCHidenTrader
+  - type: STAnomalyGeneratorSpawnBlocker
+    size: 5

@@ -11,6 +11,7 @@
       - Human
       - Dwarf
       - Gingerbread
+      - HumanFat
     # Обнулил требования, так как люди не могут зайти за сталкера когда их турнули
     # c ГП. И по сути не могут играть вообще. Я хз как это сделать лучше, но то что есть сейчас
     # не даёт людям вообще играть.
@@ -63,7 +64,7 @@
     torso: ClothingTorsoSweaterStalkerGreen
     legs: ClothingLegsJeansBlue
     shoes: ClothingShoesNovice
-    back: ClothingBackpackTownBlackStalker
+    back: ClothingBackpackDuffelGreenStalker
     pocket1: Cartridge7mmBuckshot
     pocket2: Cartridge7mmBuckshot
     outerClothing: ClothingOuterJacketStalker

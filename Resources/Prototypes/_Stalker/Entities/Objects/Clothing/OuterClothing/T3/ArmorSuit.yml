@@ -26,7 +26,7 @@
       flatReductions:
         Blunt: 5
         Slash: 5
-        Piercing: 5
+        Piercing: 6
       coefficients:
         Blunt: 0.60
         Slash: 0.60
@@ -353,6 +353,10 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHatMonolith
     slot: head
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: 18.01
 
 - type: entity
   parent: STClothingHeadHatBase
@@ -387,6 +391,10 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHatMonolith
     slot: head
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: 18.01
 
 - type: entity
   parent: STClothingOuterArmorBase

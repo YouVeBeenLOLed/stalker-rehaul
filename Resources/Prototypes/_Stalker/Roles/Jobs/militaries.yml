@@ -33,6 +33,10 @@
         pullingItemTag: PliersStalker
         teethCount: 3
         initialTeeth: 3
+      - type: NpcFactionMember
+        factions:
+        - MilitaryStalker
+      - type: STAnomalyTipsViewing
 
 - type: job
   id: Military
@@ -206,3 +210,12 @@
     1: Military
     2: MilitaryOfficer
     3: MilitaryHead
+
+- type: stBand
+  id: STMilitaryStalkerBand
+  name: MilitaryStalker
+  factionId: MilitaryStalker
+  maxMembers: 10
+  managingRankId: 1
+  hierarchy:
+    1: MilitaryStalker
