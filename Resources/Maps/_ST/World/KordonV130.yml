@@ -288881,6 +288881,13 @@ entities:
       canCollide: False
     - type: Fixtures
       fixtures: {}
+- proto: Cordon-Project
+  entities:
+  - uid: 28872
+    components:
+    - type: Transform
+      pos: -152.5,-6.5
+      parent: 1
 - proto: Cordon-Rene1
   entities:
   - uid: 2779
