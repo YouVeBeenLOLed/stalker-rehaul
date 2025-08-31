@@ -131903,6 +131903,8 @@ entities:
     - type: ZoneArtifactSpawnerMapTier
       maxTier: 4
       minTier: 0
+    - type: STMapKey
+      value: RedForest
 - proto: ActionToggleInternals
   entities:
   - uid: 3

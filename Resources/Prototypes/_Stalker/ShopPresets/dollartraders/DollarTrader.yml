@@ -94,10 +94,12 @@
     items:
       918PBMBoxCink: 20
       939SP5BoxCink: 30
-      939SP6BoxCink: 55
+      939BPBoxCink: 55
       556M855BoxCink: 30
       751M80BoxCink: 35
       545PCBoxCink: 25
+      545BPBoxCink: 120
+      556M856BoxCink: 120
       725PSTBoxCink: 20
       8mmBuckshotBoxCink: 40
       754PCBox: 5
