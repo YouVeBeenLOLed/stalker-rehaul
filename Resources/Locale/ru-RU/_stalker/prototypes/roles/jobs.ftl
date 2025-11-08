@@ -17,22 +17,24 @@ job-clearsky-supervisor = Исследуй Зону и оберегай её с�
 job-covenant = Завет
 job-covenant-desc = Это небольшая армия крайне опасных фанатиков.
 job-covenant-supervisor = Исследуй Зону и оберегай её секреты от посторонних глаз.
+job-covenant-head = Лидер Завета
 
 job-deserter = Отступник
 job-deserter-desc = Дезертир из государственых структур.
 job-deserter-supervisor = Ослушайся приказов диктаторов! Защити честь и достоинство зоны!
+job-deserter-head = Лидер Отступников
 
-job-dolg = Боец Долга
+job-dolg = Боец Авангарда
 job-dolg-desc = Защитник человечества.
 job-dolg-supervisor = Вы подчиняетесь старшим по званию.
-job-head-dolg = Лидер Долга
+job-head-dolg = Лидер Авангарда
 job-head-dolg-desc = Защитник человечества.
-job-head-dolg-supervisor = Вы командуете другими бойцами Долга.
+job-head-dolg-supervisor = Вы командуете другими бойцами Авангарда.
 
-job-freedom = Боец Свободы
+job-freedom = Боец PCZI
 job-freedom-desc = Защитник зоны.
 job-freedom-supervisor = Кури, защищай Зону и игнорируй авторитеты.
-job-head-freedom = Атаман
+job-head-freedom = Лидер PCZI
 job-head-freedom-desc = Защитник зоны.
 job-head-freedom-supervisor = Командиры? У анархистов?.
 
@@ -56,7 +58,7 @@ job-military-head = Начальник Гарнизона
 job-military-head-desc = Удерживают Зону для предотвращения разграбления опасных радиоактивных материалов и предотвращения несанкционированного проникновения любых лиц.
 job-military-officer = Командир Военных
 job-military-officer-desc = Удерживают Зону для предотвращения разграбления опасных радиоактивных материалов и предотвращения несанкционированного проникновения любых лиц.
-job-military-supervisor = Вы подчиняетесь старшим по званию.
+job-military-supervisor = Старшим по званию
 
 job-monolith = Монолит
 job-monolith-desc = Религиозная группировка зомбированных фанатиков, распологающаяся на севере Зоны и считающая своим долгом искоренить "неверных".
@@ -120,6 +122,7 @@ job-sbu-supervisor = Подчиняйся старшим по званию.
 job-stalker = Одиночка
 job-stalker-desc = Это кочевая полуобъединенная группировка, которая просто живёт за счет Зоны, чтобы заработать немного монет на свою повседневную жизнь.
 job-stalker-supervisor = Вы работаете сами на себя
+job-stalker-veteran = Одиночка Ветеран
 
 job-jaba = Жаба
 job-jaba-desc = Группа по интересам. Жадность это стиль жизнь, любопытство не порок.
@@ -148,3 +151,5 @@ job-militia-supervisor = Вы подчиняетесь командирам оп
 job-militia-commander = Командир ополчения
 job-militia-commander-desc = Сталкерское ополчение. Командиров может быть много.
 job-militia-commander-supervisor = Вы советуетесь с другими командирами ополчения
+
+job-guide = Проводник

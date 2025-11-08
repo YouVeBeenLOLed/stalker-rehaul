@@ -53,6 +53,15 @@
     state: seraph_officer
 
 - type: jobIcon
+  id: seraphim_cherubim
+  locationPreference: Right
+  isShaded: true
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: seraph_cherubim
+
+- type: jobIcon
   id: tec
   locationPreference: Right
   isShaded: true
@@ -86,7 +95,7 @@
   icon:
     sprite: /Textures/_Stalker/Icons/Patches/band.rsi
     hideOnStealth: true
-    state: dolg
+    state: avangard
 
 - type: jobIcon
   id: monolith
@@ -122,7 +131,7 @@
   icon:
     sprite: /Textures/_Stalker/Icons/Patches/band.rsi
     hideOnStealth: true
-    state: freedom
+    state: PCZI
 
 - type: jobIcon
   id: sbu
@@ -448,3 +457,35 @@
     sprite: /Textures/_Stalker/Icons/Patches/band.rsi
     hideOnStealth: true
     state: ecologist_red
+
+- type: jobIcon
+  id: guide
+  locationPreference: Right
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: guide
+
+- type: jobIcon
+  id: voen1
+  locationPreference: Right
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: voen1
+
+- type: jobIcon
+  id: voen2
+  locationPreference: Right
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: voen2
+
+- type: jobIcon
+  id: voen3
+  locationPreference: Right
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: voen3

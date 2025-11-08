@@ -202,7 +202,7 @@
       state: icon
     - type: SpawnItemsOnUse
       items:
-        - id: ClothingOuterArmorZaryaMilitary
+        - id: STClothingOuterArmorLightPlateVestBaseMilitary
         - id: Zipties
         - id: Zipties
         - id: PowerCellHyper
@@ -231,14 +231,15 @@
         - id: 545Mag30
         - id: 545Mag30
         - id: 545Mag30
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: 545FMJBox
         - id: STFlashlightSeclite
         - id: BaseRadio
+        - id: STPillboxProbud
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -259,7 +260,7 @@
       state: icon
     - type: SpawnItemsOnUse
       items:
-        - id: ClothingOuterArmorZaryaMilitary
+        - id: STClothingOuterArmorLightPlateVestBaseMilitary
         - id: Zipties
         - id: Zipties
         - id: PowerCellHyper
@@ -290,15 +291,16 @@
         - id: 545Mag30
         - id: 545Mag30
         - id: 545Mag30
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: 545FMJBox
         - id: STFlashlightSeclite
         - id: BaseRadio
         - id: Binocularus1
+        - id: STPillboxProbud
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -319,12 +321,12 @@
       state: icon
     - type: SpawnItemsOnUse
       items:
-        - id: STClothingOuterArmorLightPlateVestBasePSZ7
         - id: Zipties
         - id: Zipties
         - id: PowerCellHyper
+        - id: STClothingOuterArmorLightPlateVestBaseMilitary
+        - id: STWeaponRifleAKS74
         - id: ClothingHeadBeretMilitary
-        - id: STWeaponRifleAKM
         - id: ClothingBeltWebbingOfficerStalker
         - id: ClothingBackpackTacticOliveStalker
         - id: DrinkMREFlask
@@ -342,6 +344,17 @@
         - id: 918PBMBox
         - id: MedkitAI2
         - id: MedkitAI2
+        - id: 545Mag45
+        - id: 545Mag45
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545PCBox
+        - id: 545PCBox
+        - id: 545PCBox
+        - id: 545PCBox
+        - id: 545PCBox
+        - id: 545PCBox
         - id: MedkitMilitary
         - id: MedkitMilitary
         - id: MedkitScience
@@ -349,21 +362,10 @@
         - id: STTourniquet
         - id: STOintmentGood
         - id: STGauze
-        - id: 739Mag30
-        - id: 739Mag30
-        - id: 739Mag30
-        - id: 739Mag30
-        - id: 739Mag30
-        - id: 739Mag30
-        - id: 739FMJBox
-        - id: 739FMJBox
-        - id: 739FMJBox
-        - id: 739FMJBox
-        - id: 739FMJBox
-        - id: 739FMJBox
         - id: STFlashlightSeclite
         - id: BaseRadio
         - id: Binocularus1
+        - id: Bloodpack
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -1511,6 +1513,31 @@
     sound:
       path: /Audio/Effects/unwrap.ogg
 
+- type: entity
+  parent: BaseItem
+  id: ArmyBloodPackMilitaryCrate
+  name: армейский комплект пакет с кровью
+  description: Базовый армейский комплект, содержащий пакеты с кровью, предназначенный для солдат С.О.П.
+  suffix: Stalker
+  components:
+  - type: STWeight
+    self: 87.2
+  - type: Item
+    size: Ginormous
+  - type: MultiHandedItem
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/olive_bag.rsi
+    state: icon
+  - type: SpawnItemsOnUse
+    items:
+    - id: Bloodpack
+    - id: Bloodpack
+    - id: Bloodpack
+    - id: Bloodpack
+    - id: Bloodpack
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
 ### МОНОЛИТ
 
 - type: entity
@@ -1875,3 +1902,249 @@
         - id: Bloodpack
         - id: Bloodpack
         - id: Bloodpack
+
+
+
+# Отступы
+
+- type: entity
+  parent: UNstandartCrate
+  id: DesertirCrate
+  name: набор снаряжения Отступников
+  description: Набор экипировки
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: FoodTinMRE
+        - id: DrinkWaterBottleFull
+        - id: ClothingOuterArmorDeserter6B2
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: STGauze
+        - id: STWeaponRifleAKS74U
+        - id: FlashlightSeclite
+        - id: PowerCellHigh
+        - id: ClothingHeadHelmetLightDeserters
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: STCombatKnife
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+###ОДИНОЧКИ
+
+- type: entity
+  parent: UNstandartCrate
+  id: VeteranCrate
+  name: набор снаряжения Сталкеров Ополченцев
+  description: Набор экипировки
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: STClothingOuterKirasa
+        - id: PP91Mag
+        - id: PP91Mag
+        - id: PP91Mag
+        - id: STGauze
+        - id: STWeaponSMGPP91
+        - id: FlashlightSeclite
+        - id: PowerCellHigh
+        - id: ClothingHeadHelmetLight
+        - id: 919PSTBox
+        - id: 919PSTBox
+        - id: 919PSTBox
+        - id: 919PSTBox
+        - id: 919PSTBox
+        - id: STCombatKnife
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+#БАНДИТЫ
+
+- type: entity
+  parent: UNstandartCrate
+  id: BandityCrate
+  name: набор снаряжения Бандитов
+  description: Набор экипировки
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmourCoatBanditBlack
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: STGauze
+        - id: STWeaponRifleAKS74U
+        - id: FlashlightSeclite
+        - id: PowerCellHigh
+        - id: ClothingHeadHelmetLight
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: STCombatKnife
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+#НАЙМЫ
+
+- type: entity
+  parent: UNstandartCrate
+  id: MercCrate
+  name: набор снаряжения Наёмников
+  description: Набор экипировки
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: STClothingOuterArmorLightPlateVestBaseMerc
+        - id: 556Mag30
+        - id: 556Mag30
+        - id: STGauze
+        - id: STWeaponRifleL85
+        - id: FlashlightSeclite
+        - id: PowerCellHigh
+        - id: ClothingHeadHelmetLight
+        - id: 556FMJBox
+        - id: 556FMJBox
+        - id: 556FMJBox
+        - id: 556FMJBox
+        - id: STCombatKnife
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+#ЗАВЕТ
+
+- type: entity
+  parent: UNstandartCrate
+  id: ZavetCrate
+  name: набор снаряжения Завета
+  description: Набор экипировки
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: STClothingOuterArmorLightPlateVestBaseZavet
+        - id: 556Mag30
+        - id: 556Mag30
+        - id: STGauze
+        - id: STWeaponRifleL85
+        - id: FlashlightSeclite
+        - id: PowerCellHigh
+        - id: ClothingHeadHelmetLight
+        - id: 556FMJBox
+        - id: 556FMJBox
+        - id: 556FMJBox
+        - id: 556FMJBox
+        - id: STCombatKnife
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+#СЕРАФИМЫ
+
+- type: entity
+  parent: UNstandartCrate
+  id: SefirotCrate
+  name: набор снаряжения Серафимов
+  description: Набор экипировки
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: STClothingOuterArmorLightPlateVestBaseSera
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: STGauze
+        - id: STWeaponRifleAKS74USERAPH
+        - id: FlashlightSeclite
+        - id: PowerCellHigh
+        - id: ClothingHeadHelmetLight
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: STCombatKnife
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg

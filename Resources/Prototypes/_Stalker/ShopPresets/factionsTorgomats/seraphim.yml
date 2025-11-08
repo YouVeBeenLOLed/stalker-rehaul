@@ -71,7 +71,8 @@
         arbaletserih: 1000
         STWeaponRifleAKS74USERAPH: 500
         STWeaponRifleAKS74: 4000
-        STWeaponRifleAKM: 6000
+        STWeaponRifleAKM: 5500
+        STWeaponRifleStalkerAK12Sera: 8700
           # Smg
         STWeaponSMGStalkerCP2VereskSera: 2000
           # Other
@@ -131,12 +132,15 @@
         ClothingHeadHelmetInfantrySera: 650 # T2 - PVP
         ClothingHeadHelmetInfantrySerasera: 650
         ClothingHeadHelmetVityaz1C: 2000
+        ClothingHeadAssaultHelmetLimaSeraZastup: 2500
           # OuterClothing #
         ClothingOuterJacketSera: 60 # T1 - PVE
         STClothingOuterArmorLightPlateVestBaseSera: 1000 # T2 - PvP
         ClothingOuterArmorRCBZSera: 1700 # T2 - ENV
         STClothingOuterArmorRassvetSera: 2000 # T2 - universal
+        STClothingOuterArmorLightPlateVestSera: 7000
         ClothingOuterArmorSevasera: 7000 # T3 - ENV
+        STClothingOuterArmorSeraphimStrash: 10000
     - name: shop-category-storage-and-containers
       priority: 5
       items:
@@ -195,7 +199,7 @@
     - name: shop-category-provisions
       priority: 9
       items:
-        FoodMeatDogCooked: 75
+        FoodMeatDogCooked: 95
         FoodMeatBoarCooked: 115
         DrinkWaterBottleFull: 10
     - name: shop-category-medicine
@@ -206,6 +210,10 @@
         STBrutepackSera: 15
         STGauzeSera: 5
         MedkitAI2Sera: 100
+        Bloodpack: 600
+        STPillboxProbud: 500
+        MedkitMilitary: 350
+        MedkitScience: 450
     - name: shop-category-modules
       priority: 11
       items:
@@ -221,3 +229,60 @@
         STClothingMaskLimaKufei: 10
         STClothingMaskKufei: 10
         STClothingHandsGlovesSera: 10
+        ClothingBandageStalkerGreen: 5
+        ClothingHeadHatBeaniehat: 10
+        ClothingMaskNeckFacemask: 10
+        ClothingMaskNeckBalaklava1: 10
+        ClothingMaskNeckBalaklava2: 10
+        ClothingMaskNeckBalaklava3: 10
+        ClothingHeadBandMerc: 30
+        ClothingHeadBandSkull: 30
+        ClothingHeadHatUshanka: 30
+        ClothingHandsGlovesFingerless: 30
+        ClothingHandsGlovesMercFingerless: 60
+        ClothingShoesColorBlack: 30
+        ClothingShoesBootsWork: 30
+        ClothingShoesLeather: 30
+        ClothingShoesBootsMerc: 30
+        ClothingShoesSwat: 35
+        ClothingHeadHatBlacksoft: 10
+        ClothingHeadHatGreysoft: 10
+        ClothingHeadHatSovietUshankaStalker: 40
+        ClothingCloakStalker: 30
+        ClothingLegsJeansBlue: 10
+        ClothingLegsJeansStalker: 10
+        ClothingLegsJeansGreenCargo: 10
+        ClothingLegsJeansGreyCargo: 10
+        ClothingLegsJeansBlackCargo: 10
+        ClothingLegsJeansBrownCargo: 10
+        ClothingLegsJeansSandCargo: 10
+        ClothingLegsJeansRussianPixel: 20
+        ClothingLegsJeansBlackNew: 20
+        ClothingLegsJeansGorka: 20
+        ClothingShoesBootsCombat: 30
+        ClothingTorsoTShirtPivozavr: 30
+        ClothingTorsoTShirtSailorSuit: 30
+        ClothingTorsoTShirtColorBlack: 30
+        ClothingTorsoTurtlenecksBlack: 90
+        ClothingTorsoTurtlenecksGorka: 90
+        ClothingTorsoTurtlenecksGorka6: 90
+        ClothingTorsoTurtlenecksBereza: 90
+        ClothingLegsJeansBereza: 20
+        ClothingLegsJeansGorka6: 20
+        ClothingTorsoTurtlenecksGorkaRus: 90
+        ClothingOuterCoatKKK: 67
+        # new shit
+        ClothingLegsBattlePantsBlack: 50
+        ClothingLegsVeryBlueJenas: 50
+        ClothingLegsCombatForest: 50
+        ClothingLegsGorka5: 50
+        ClothingLegsGorka6b: 50
+        ClothingLegsNavyPants: 50
+        ClothingLegsRussianNumber: 50
+        ClothingTorsoTurtlenecksBattleTurtleneckbBlack: 50
+        ClothingTorsoTurtlenecksBlackTurtleneck: 50
+        ClothingTorsoTurtlenecksCombatForest: 50
+        ClothingTorsoTurtlenecksGorka5: 50
+        ClothingTorsoTurtlenecksGorka6B: 50
+        ClothingTorsoTurtlenecksKhakiTurtleneck: 50
+        ClothingTorsoTurtlenecksMatrosska: 50
