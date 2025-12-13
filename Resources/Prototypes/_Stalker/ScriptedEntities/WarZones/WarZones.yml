@@ -11,7 +11,7 @@
 
 - type: stWarZone
   id: SvalkaDepo
-  rewardPointsPerPeriod: 1
+  rewardPointsPerPeriod: 0.1
   rewardPeriod: 30 # Период начисления очков в секундах
   captureCooldownHours: 8
   shouldAwardWhenDefenderPresent: true
@@ -84,17 +84,17 @@
 
 - type: stWarZone
   id: SvalkaСemetery
-  rewardPointsPerPeriod: 1.5
+  rewardPointsPerPeriod: 0.1
   rewardPeriod: 30 # Период начисления очков в секундах
-  captureCooldownHours: 48
+  captureCooldownHours: 8
   shouldAwardWhenDefenderPresent: true
   captureTime: 300 # Время захвата зоны в секундах.
   requirements:
   - !type:ZoneOwnershipRequirenment
     requiredZones: []
   - !type:TimeWindowRequirenment
-    startHourUtc: 13 # Start hour in UTC (e.g., 10:00 UTC = 10)
-    endHourUtc: 14   # End hour in UTC (e.g., 18:00 UTC = 18)
+    startHourUtc: 16 # Start hour in UTC (e.g., 10:00 UTC = 10)
+    endHourUtc: 17   # End hour in UTC (e.g., 18:00 UTC = 18)
 
 - type: entity
   id: WarZoneEntity_Svalka_Сemetery
@@ -127,7 +127,7 @@
 
 - type: stWarZone
   id: LimanskLenin
-  rewardPointsPerPeriod: 1
+  rewardPointsPerPeriod: 0.1
   rewardPeriod: 30 # Период начисления очков в секундах
   captureCooldownHours: 8
   shouldAwardWhenDefenderPresent: true
@@ -170,7 +170,7 @@
 
 - type: stWarZone
   id: KordonFerma
-  rewardPointsPerPeriod: 0.5
+  rewardPointsPerPeriod: 0.1
   rewardPeriod: 30 # Период начисления очков в секундах
   captureCooldownHours: 8
   shouldAwardWhenDefenderPresent: true
@@ -223,20 +223,38 @@
       price: 400
     - productEntity: STWeaponRifleOC14939
       price: 370
+#    - productEntity: STWeaponSMGStalkerCP2Veresk921
+#      price: 320
     - productEntity: STWeaponSniperSVDS
       price: 310
     - productEntity: ClothingHeadHelmetUlach
       price: 300
     - productEntity: STWeaponRifleStalkerAK12
       price: 270
+#      productEntity: STShotgunKS23
+#      price: 240
     - productEntity: ClothingBeltCrafterStalker
       price: 200
     - productEntity: StalkerMedBandShopCrate
       price: 75
     - productEntity: 939Mag30
       price: 45
+    - productEntity: 754Mag20
+      price: 45
+    - productEntity: 754Mag10
+      price: 35
+#    - productEntity: SR2MMag30
+#      price: 35
+#    - productEntity: 2375ShrapnelBuckshotBox
+#      price: 40
+#    - productEntity: 2375BarricadaBulletBox
+#      price: 30
+#    - productEntity: 2375VolnaRBulletBox
+#      price: 15
 
   #патроны
+#    - productEntity: 921PEGJBoxCink
+#      price: 70
     - productEntity: 918PBMBoxCink
       price: 70
     - productEntity: 919PBMBoxCink
@@ -249,7 +267,11 @@
       price: 110
     - productEntity: 751M80BoxCink
       price: 110
-    - productEntity: 939SP6BoxCink
+    - productEntity: 939BPBoxCink
+      price: 125
+#    - productEntity: 921BTGJBoxCink
+#      price: 125
+    - productEntity: 754FMJBoxCink
       price: 125
     - productEntity: 545BPBoxCink
       price: 155
@@ -259,5 +281,9 @@
       price: 185
     - productEntity: 751M61BoxCink
       price: 185
-    - productEntity: 939BPBoxCink
+    - productEntity: 754PCBoxCink
+      price: 185
+    - productEntity: 939SP6BoxCink
       price: 195
+#    - productEntity: 9217N42BoxCink
+#      price: 195

@@ -152,7 +152,7 @@
 - type: entity
   parent: UNstandartCrate
   id: DuryAK2Crate
-  name: комплект АКСУ и куртка авангарда
+  name: комплект АКСУ и куртка Долга
   description: Набор для тех, кто совсем на мели.
   components:
     - type: Item
@@ -892,10 +892,10 @@
       - 0,0,2,2
     - type: Sprite
       sprite: Objects/Consumable/Smokeables/Cigarettes/Cartons/red.rsi
-      state: closed
+      state: icon
     - type: Icon
       sprite: Objects/Consumable/Smokeables/Cigarettes/Cartons/red.rsi
-      state: closed
+      state: icon
 
 - type: entity
   parent: BaseItem
@@ -1322,7 +1322,7 @@
         - id: STGauze
         - id: STGauze
         - id: STClothingShoesBootsCombatFilled
-        - id: ClothingOuterArmorIssgSpark
+        # - id: ClothingOuterArmorIssgSpark # Stalker-TODO: This prototype does not exist
         - id: BaseMP5Mag
         - id: BaseMP5Mag
         - id: BaseMP5Mag
@@ -2029,12 +2029,12 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-#НАЙМЫ
+#Свобода
 
 - type: entity
   parent: UNstandartCrate
-  id: MercCrate
-  name: набор снаряжения Наёмников
+  id: FreedomCrate
+  name: набор снаряжения Свободы
   description: Набор экипировки
   components:
     - type: Item
@@ -2049,7 +2049,7 @@
       state: kb2
     - type: SpawnItemsOnUse
       items:
-        - id: STClothingOuterArmorLightPlateVestBaseMerc
+        - id: STClothingOuterArmorLightPlateVestBaseFreedom
         - id: 556Mag30
         - id: 556Mag30
         - id: STGauze
@@ -2134,6 +2134,46 @@
         - id: 545Mag30
         - id: STGauze
         - id: STWeaponRifleAKS74USERAPH
+        - id: FlashlightSeclite
+        - id: PowerCellHigh
+        - id: ClothingHeadHelmetLight
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: 545FMJBox
+        - id: STCombatKnife
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+#ДОЛГ
+
+- type: entity
+  parent: UNstandartCrate
+  id: DutyCrate
+  name: набор снаряжения Бандитов
+  description: Набор экипировки
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: STClothingOuterArmorLightPlateVestBaseDolg
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: STGauze
+        - id: STWeaponRifleAKS74U
         - id: FlashlightSeclite
         - id: PowerCellHigh
         - id: ClothingHeadHelmetLight

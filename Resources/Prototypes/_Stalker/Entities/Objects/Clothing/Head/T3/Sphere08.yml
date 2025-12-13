@@ -47,6 +47,7 @@
     equippedPrefix: off
   - type: Item
     heldPrefix: off
+  - type: ItemTogglePointLight
   - type: PointLight
     enabled: false
     mask: /Textures/Effects/LightMasks/cone.png
@@ -72,16 +73,11 @@
         id: blinking
         interpolate: Nearest
         maxDuration: 1.0
-        minValue: 0.1
-        maxValue: 2.0
+        startValue: 0.1
+        endValue: 2.0
         isLooped: true
-  - type: ToggleableLightVisuals
+  - type: ToggleableVisuals
     spriteLayer: light
-    inhandVisuals:
-      left:
-      - state: on-inhand-left
-      right:
-      - state: on-inhand-right
     clothingVisuals:
       head:
       - state: on-equipped-HELMET
@@ -111,7 +107,7 @@
   parent: STClothingHeadHelmetEnvironmentT3Base
   id: ClothingHeadHelmetBerill5MDolg
   name: шлем «Каланча»
-  description: Эта модель является модификацией армейского шлема Сфера-08, для группировки Авангард. Обеспечивает защиту 3 класса, позволяя выдерживать тупые удары, осколки и в какой-то мере пули 1 и 2 класса пробития. Надёжный шлем, по достойной цене.
+  description: Эта модель является модификацией армейского шлема Сфера-08, для группировки Долг. Обеспечивает защиту 3 класса, позволяя выдерживать тупые удары, осколки и в какой-то мере пули 1 и 2 класса пробития. Надёжный шлем, по достойной цене.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/berill5m_helm_dolg.rsi

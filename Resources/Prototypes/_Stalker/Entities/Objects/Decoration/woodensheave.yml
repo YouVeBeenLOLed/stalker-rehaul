@@ -1,6 +1,6 @@
 - type: entity
   id: woodensheave
-  parent: BaseStructureStalkerDynamic
+  parent: STBaseStructure
   name: кабельная катушка
   suffix: ST, Mapping
   description: Круглый предмет в форме барабана, такой как катушка, используемый для транспортировки различных типов электрических проводов.

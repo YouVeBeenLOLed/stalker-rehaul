@@ -16,7 +16,7 @@
     clothingPrototype: STClothingHeadHardsuitSevaHelmBase
     slot: head
   - type: Storage
-    maxItemsize: Large
+    maxItemSize: Large
     grid:
       - 0,0,5,3
       - 7,0,12,3
@@ -48,6 +48,11 @@
     - BlockCloak
     - BlockBack
     - BlockBelt
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
 
 - type: entity
   parent: ClothingHeadHardsuitBase
@@ -66,7 +71,6 @@
   - type: Tag
     tags:
       - BlockMask
-      - HidesNose
   - type: PressureProtection
     highPressureMultiplier: 0.1
     lowPressureMultiplier: 1000
@@ -86,6 +90,7 @@
   - type: HideLayerClothing
     slots:
     - Hair
+    - Snout
 # Stalker
 
 - type: entity
@@ -131,7 +136,7 @@
   id: ClothingHeadHardsuitSevaHelmSci
   name: шлем севы
   description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/seva_sci_helm.rsi
@@ -149,15 +154,15 @@
     maxItemSize: Normal
     grid:
       - 0,2,0,3
-      - 1,-0,1,-0
+      - 1,0,1,0
       - 2,2,2,3
-      - 3,-0,3,-0
+      - 3,0,3,0
       - 4,2,4,3
-      - 5,-0,5,-0
+      - 5,0,5,0
       - 6,2,6,3
-      - 7,-0,7,-0
+      - 7,0,7,0
       - 8,2,8,3
-      - 9,-0,9,-0
+      - 9,0,9,0
       - 10,2,10,3
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/seva_military.rsi
@@ -209,7 +214,7 @@
   id: ClothingHeadHardsuitSevaHelmMonolith
   name: шлем севы монолита
   description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/seva_helm_monolith.rsi
@@ -407,6 +412,26 @@
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHardsuitSevaHelmDolgRed
       slot: head
+    - type: Armor
+      armorClass: 2
+      modifiers:
+       flatReductions:
+         Blunt: 4
+         Slash: 4
+         Piercing: 5
+         Heat: 4
+         Radiation: 4
+         Caustic: 4
+         Shock: 4
+       coefficients:
+         Blunt: 0.8
+         Slash: 0.8
+         Piercing: 0.7
+         Heat: 0.50
+         Radiation: 0.6
+         Caustic: 0.50
+         Shock: 0.60
+         Compression: 0.7
 
 - type: entity
   parent: STClothingHeadHardsuitSevaHelmBase

@@ -19,6 +19,9 @@
   id: Magazine754
 
 - type: Tag
+  id: Magazine13x108
+
+- type: Tag
   id: Magazine939
 
 - type: Tag
@@ -80,3 +83,9 @@
 
 - type: Tag
   id: DrumAutoAss
+
+- type: Tag
+  id: MagazineSR2M
+
+- type: Tag
+  id: MagazineSR1

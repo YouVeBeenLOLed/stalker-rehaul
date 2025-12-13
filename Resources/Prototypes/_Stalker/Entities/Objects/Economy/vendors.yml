@@ -88,6 +88,7 @@
   id: VendingMachineRestockMilitary
   name: Снабжение военных
   description: Ящик со всем, что вам нужно для уничтожения нелегалов.
+  categories: [ StSkipRestockTest ]
   components:
     - type: VendingMachineRestock
       canRestock:
@@ -247,6 +248,7 @@
   id: VendingMachineRestockUN
   name: Снабжение ООН
   description: Ящик со всем, что вам нужно для выражения беспокойства.
+  categories: [ StSkipRestockTest ]
   components:
     - type: VendingMachineRestock
       canRestock:
@@ -317,6 +319,7 @@
   id: VendingMachineRestockLaborer
   name: Снабжение ящиков грузчиков
   description: Ящик с ящиками для грузчиков
+  categories: [ StSkipRestockTest ]
   components:
     - type: VendingMachineRestock
       canRestock:
@@ -387,6 +390,7 @@
   id: MilitaryPSZInventoryRestock
   name: комплект ПСЗ пополнительный
   description: Класть на склад.
+  categories: [ StSkipRestockTest ]
   components:
     - type: VendingMachineRestock
       canRestock:
@@ -460,6 +464,7 @@
   id: MilitaryPSZInventoryRestockOfficer
   name: комплект ПСЗ офицерский пополнительный
   description: Класть в офицерский ящик.
+  categories: [ StSkipRestockTest ]
   components:
     - type: VendingMachineRestock
       canRestock:
@@ -517,6 +522,7 @@
   id: MonolithInventoryRestock
   name: пополнительный ящик «Монолита»
   description: Класть на склад.
+  categories: [ StSkipRestockTest ]
   components:
     - type: VendingMachineRestock
       canRestock:
@@ -725,18 +731,18 @@
   startingInventory:
     BandityCrate: 8
 
-#НАЙМЫ
+#СВОБОДА
 
 - type: entity
   parent: VendingMachine
-  id: VendingMachineBoxesMerc
+  id: VendingMachineBoxesFreedom
   name: ящик с наборами снаряжения Наёмников
   description: Ящик, содержащий снаряжение внутри.
   suffix: Stalker
   components:
     - type: VendingMachine
       ejectDelay: 0.1
-      pack: MercComplect
+      pack: FreedomComplect
       dispenseOnHitChance: 0.0
       dispenseOnHitThreshold: 2
       offState: off
@@ -751,7 +757,7 @@
         - state: panel
           map: ["enum.WiresVisualLayers.MaintenancePanel"]
     - type: AccessReader
-      access: [["Merc"]]
+      access: [["Freedom"]]
     - type: Fixtures
       fixtures:
         fix1:
@@ -771,9 +777,9 @@
       radius: 0
 
 - type: vendingMachineInventory
-  id: MercComplect
+  id: FreedomComplect
   startingInventory:
-    MercCrate: 8
+    FreedomCrate: 8
 
 #ЗАВЕТ
 
@@ -874,3 +880,96 @@
   id: SerafimComplect
   startingInventory:
     SefirotCrate: 8
+
+#ДОЛГ
+
+- type: entity
+  parent: VendingMachine
+  id: VendingMachineBoxesDuty
+  name: ящик с наборами снаряжения Долга
+  description: Ящик, содержащий снаряжение внутри.
+  suffix: Stalker
+  components:
+    - type: VendingMachine
+      ejectDelay: 0.1
+      pack: DolgComplect
+      dispenseOnHitChance: 0.0
+      dispenseOnHitThreshold: 2
+      offState: off
+      brokenState: broken
+    - type: ApcPowerReceiver
+      needsPower: False
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/military_green_box.rsi
+      layers:
+        - state: "off"
+          map: ["enum.VendingMachineVisualLayers.Base"]
+        - state: panel
+          map: ["enum.WiresVisualLayers.MaintenancePanel"]
+    - type: AccessReader
+      access: [["Dolg"]]
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.25,0.25,0.25,0.35"
+          density: 50
+          mask:
+          - CrateMask
+          layer:
+          - MachineLayer
+    - type: AmbientSound
+      range: 0
+    - type: PointLight
+      enabled: false
+      castShadows: false
+      radius: 0
+
+- type: vendingMachineInventory
+  id: DolgComplect
+  startingInventory:
+    DutyCrate: 8
+
+- type: entity
+  parent: VendingMachine
+  id: VendingMachineBoxesMerc
+  name: ящик с наборами снаряжения Долга
+  description: Ящик, содержащий снаряжение внутри.
+  suffix: Stalker
+  components:
+    - type: VendingMachine
+      ejectDelay: 0.1
+      pack: DolgComplect
+      dispenseOnHitChance: 0.0
+      dispenseOnHitThreshold: 2
+      offState: off
+      brokenState: broken
+    - type: ApcPowerReceiver
+      needsPower: False
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/military_green_box.rsi
+      layers:
+        - state: "off"
+          map: ["enum.VendingMachineVisualLayers.Base"]
+        - state: panel
+          map: ["enum.WiresVisualLayers.MaintenancePanel"]
+    - type: AccessReader
+      access: [["Dolg"]]
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.25,0.25,0.25,0.35"
+          density: 50
+          mask:
+          - CrateMask
+          layer:
+          - MachineLayer
+    - type: AmbientSound
+      range: 0
+    - type: PointLight
+      enabled: false
+      castShadows: false
+      radius: 0

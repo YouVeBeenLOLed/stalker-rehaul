@@ -8,6 +8,9 @@
   - Stalker
   - StalkerVeteran
   - StalkerGuide
+  - StalkerClearSkyHead
+  - StalkerClearSky
+
 # - type: department
 #   id: StalkerDisabled
 #   description: "department-StalkerAdvanced-description"
@@ -38,7 +41,7 @@
   - StalkerHeadDolg
   - StalkerFreedom
   - StalkerHeadFreedom
-  - StalkerClearSky
+  #- StalkerClearSky # Stalker-TODO: Jobs cannot have multiple primary departments!
   - StalkerNeutral
   - StalkerPoisk
   - StalkerJournalist
@@ -74,14 +77,15 @@
   - Military
   - MilitaryOfficer
   - MilitaryHead
-  - StalkerScientist
-  - StalkerHeadScientist
-  - StalkerISSG
+  - sci
+  - sci_decan
+  - sci_rector
   - MilitaryStalker
   - StalkerUN
   - StalkerClown
   - StalkerEcologist
   - StalkerHeadEcologist
+
 - type: department
   id: StalkerReligius
   name: department-StalkerReligius

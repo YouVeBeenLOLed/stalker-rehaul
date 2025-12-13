@@ -17,6 +17,24 @@
     state: sci
 
 - type: jobIcon
+  id: sci_decan
+  locationPreference: Right
+  isShaded: true
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: sci_decan
+
+- type: jobIcon
+  id: sci_rector
+  locationPreference: Right
+  isShaded: true
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: sci_rector
+
+- type: jobIcon
   id: army
   locationPreference: Right
   isShaded: true
@@ -95,7 +113,7 @@
   icon:
     sprite: /Textures/_Stalker/Icons/Patches/band.rsi
     hideOnStealth: true
-    state: avangard
+    state: dolg
 
 - type: jobIcon
   id: monolith
@@ -131,7 +149,7 @@
   icon:
     sprite: /Textures/_Stalker/Icons/Patches/band.rsi
     hideOnStealth: true
-    state: PCZI
+    state: freedom
 
 - type: jobIcon
   id: sbu
@@ -489,3 +507,4 @@
     sprite: /Textures/_Stalker/Icons/Patches/band.rsi
     hideOnStealth: true
     state: voen3
+
